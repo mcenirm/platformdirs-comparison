@@ -23,12 +23,7 @@ jobs:
         run: |
           git config user.name "$GITHUB_ACTOR"
           git config user.email "${GITHUB_REPOSITORY//\//+}+${GITHUB_WORKFLOW// /-}@github.io"
-          if [ -n "$GITHUB_BASE_REF" ]
-          then
-            echo "BASE_REF=$GITHUB_BASE_REF" >> $GITHUB_ENV
-          else
-            echo "BASE_REF=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
-          fi
+          git pull --ff-only
       - name: Run test
         shell: bash
         run: |
