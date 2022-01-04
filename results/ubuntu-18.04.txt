@@ -1,0 +1,36 @@
+-- app dirs 1.4.4 --
+-- app dirs (with optional 'version')
+user_data_dir: /home/runner/.local/share/MyApp/1.0
+user_config_dir: /home/runner/.config/MyApp/1.0
+user_cache_dir: /home/runner/.cache/MyApp/1.0
+user_state_dir: /home/runner/.local/state/MyApp/1.0
+user_log_dir: /home/runner/.cache/MyApp/1.0/log
+site_data_dir: /usr/local/share/MyApp/1.0
+site_config_dir: /etc/xdg/MyApp/1.0
+
+-- app dirs (without optional 'version')
+user_data_dir: /home/runner/.local/share/MyApp
+user_config_dir: /home/runner/.config/MyApp
+user_cache_dir: /home/runner/.cache/MyApp
+user_state_dir: /home/runner/.local/state/MyApp
+user_log_dir: /home/runner/.cache/MyApp/log
+site_data_dir: /usr/local/share/MyApp
+site_config_dir: /etc/xdg/MyApp
+
+-- app dirs (without optional 'appauthor')
+user_data_dir: /home/runner/.local/share/MyApp
+user_config_dir: /home/runner/.config/MyApp
+user_cache_dir: /home/runner/.cache/MyApp
+user_state_dir: /home/runner/.local/state/MyApp
+user_log_dir: /home/runner/.cache/MyApp/log
+site_data_dir: /usr/local/share/MyApp
+site_config_dir: /etc/xdg/MyApp
+
+-- app dirs (with disabled 'appauthor')
+user_data_dir: /home/runner/.local/share/MyApp
+user_config_dir: /home/runner/.config/MyApp
+user_cache_dir: /home/runner/.cache/MyApp
+user_state_dir: /home/runner/.local/state/MyApp
+user_log_dir: /home/runner/.cache/MyApp/log
+site_data_dir: /usr/local/share/MyApp
+site_config_dir: /etc/xdg/MyApp
