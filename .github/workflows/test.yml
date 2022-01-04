@@ -5,12 +5,46 @@ jobs:
   test:
     runs-on: ${{ matrix.os }}
     strategy:
+      max-parallel: 1
       matrix:
         os:
-          - windows-latest
-          - ubuntu-latest
-          - macos-latest
+          - windows-2022
+          - windows-2019
+          - windows-2016
+          - ubuntu-20.04
+          - ubuntu-18.04
+          - macos-11
+          - macos-10.15
     steps:
-      - run: |
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Configure git for commit
+        shell: bash
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "${GITHUB_REPOSITORY//\//+}+${GITHUB_WORKFLOW// /-}@github.io"
+          if [ -n "$GITHUB_BASE_REF" ]
+          then
+            echo "BASE_REF=$GITHUB_BASE_REF" >> $GITHUB_ENV
+          else
+            echo "BASE_REF=${GITHUB_REF#refs/heads/}" >> $GITHUB_ENV
+          fi
+      - name: Run test
+        shell: bash
+        run: |
+          : setup
           python3 -m pip install appdirs
-          python3 -m appdirs
+          mkdir -p results
+          : test
+          o=results/${{ matrix.os }}.txt
+          python3 -m appdirs > "$o"
+          cat -- "$o"
+      - name: Push any changes
+        shell: bash
+        run: |
+          git add results
+          if ! git diff --cached --name-status --exit-code
+          then
+            git commit -m 'something has changed on ${{ matrix.os }}'
+            git push
+          fi
