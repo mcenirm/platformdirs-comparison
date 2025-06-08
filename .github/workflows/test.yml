@@ -31,13 +31,26 @@ jobs:
       - name: Run test
         shell: bash
         run: |
+          :
           : setup
+          :
           python3 -m venv .venv
-          .venv/bin/python3 -m pip install platformdirs
+          for b in bin Scripts
+          do
+            a=.venv/$b/activate
+            if [[ -f "$a" ]]
+            then
+              source "$a"
+              break
+            fi
+          done
+          pip install platformdirs
           mkdir -p results
+          :
           : test
+          :
           o=results/${{ matrix.os }}.txt
-          .venv/bin/python3 -m platformdirs > "$o"
+          python -m platformdirs > "$o"
           cat -- "$o"
       - name: Push any changes
         shell: bash
