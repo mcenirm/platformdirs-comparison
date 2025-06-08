@@ -32,11 +32,12 @@ jobs:
         shell: bash
         run: |
           : setup
-          python3 -m pip install platformdirs
+          python3 -m venv .venv
+          .venv/bin/python3 -m pip install platformdirs
           mkdir -p results
           : test
           o=results/${{ matrix.os }}.txt
-          python3 -m platformdirs > "$o"
+          .venv/bin/python3 -m platformdirs > "$o"
           cat -- "$o"
       - name: Push any changes
         shell: bash
