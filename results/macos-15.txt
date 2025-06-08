@@ -1,0 +1,68 @@
+-- platformdirs 4.3.8 --
+-- app dirs (with optional 'version')
+user_data_dir: /Users/runner/Library/Application Support/MyApp/1.0
+user_config_dir: /Users/runner/Library/Application Support/MyApp/1.0
+user_cache_dir: /Users/runner/Library/Caches/MyApp/1.0
+user_state_dir: /Users/runner/Library/Application Support/MyApp/1.0
+user_log_dir: /Users/runner/Library/Logs/MyApp/1.0
+user_documents_dir: /Users/runner/Documents
+user_downloads_dir: /Users/runner/Downloads
+user_pictures_dir: /Users/runner/Pictures
+user_videos_dir: /Users/runner/Movies
+user_music_dir: /Users/runner/Music
+user_runtime_dir: /Users/runner/Library/Caches/TemporaryItems/MyApp/1.0
+site_data_dir: /Library/Application Support/MyApp/1.0
+site_config_dir: /Library/Application Support/MyApp/1.0
+site_cache_dir: /Library/Caches/MyApp/1.0
+site_runtime_dir: /Users/runner/Library/Caches/TemporaryItems/MyApp/1.0
+
+-- app dirs (without optional 'version')
+user_data_dir: /Users/runner/Library/Application Support/MyApp
+user_config_dir: /Users/runner/Library/Application Support/MyApp
+user_cache_dir: /Users/runner/Library/Caches/MyApp
+user_state_dir: /Users/runner/Library/Application Support/MyApp
+user_log_dir: /Users/runner/Library/Logs/MyApp
+user_documents_dir: /Users/runner/Documents
+user_downloads_dir: /Users/runner/Downloads
+user_pictures_dir: /Users/runner/Pictures
+user_videos_dir: /Users/runner/Movies
+user_music_dir: /Users/runner/Music
+user_runtime_dir: /Users/runner/Library/Caches/TemporaryItems/MyApp
+site_data_dir: /Library/Application Support/MyApp
+site_config_dir: /Library/Application Support/MyApp
+site_cache_dir: /Library/Caches/MyApp
+site_runtime_dir: /Users/runner/Library/Caches/TemporaryItems/MyApp
+
+-- app dirs (without optional 'appauthor')
+user_data_dir: /Users/runner/Library/Application Support/MyApp
+user_config_dir: /Users/runner/Library/Application Support/MyApp
+user_cache_dir: /Users/runner/Library/Caches/MyApp
+user_state_dir: /Users/runner/Library/Application Support/MyApp
+user_log_dir: /Users/runner/Library/Logs/MyApp
+user_documents_dir: /Users/runner/Documents
+user_downloads_dir: /Users/runner/Downloads
+user_pictures_dir: /Users/runner/Pictures
+user_videos_dir: /Users/runner/Movies
+user_music_dir: /Users/runner/Music
+user_runtime_dir: /Users/runner/Library/Caches/TemporaryItems/MyApp
+site_data_dir: /Library/Application Support/MyApp
+site_config_dir: /Library/Application Support/MyApp
+site_cache_dir: /Library/Caches/MyApp
+site_runtime_dir: /Users/runner/Library/Caches/TemporaryItems/MyApp
+
+-- app dirs (with disabled 'appauthor')
+user_data_dir: /Users/runner/Library/Application Support/MyApp
+user_config_dir: /Users/runner/Library/Application Support/MyApp
+user_cache_dir: /Users/runner/Library/Caches/MyApp
+user_state_dir: /Users/runner/Library/Application Support/MyApp
+user_log_dir: /Users/runner/Library/Logs/MyApp
+user_documents_dir: /Users/runner/Documents
+user_downloads_dir: /Users/runner/Downloads
+user_pictures_dir: /Users/runner/Pictures
+user_videos_dir: /Users/runner/Movies
+user_music_dir: /Users/runner/Music
+user_runtime_dir: /Users/runner/Library/Caches/TemporaryItems/MyApp
+site_data_dir: /Library/Application Support/MyApp
+site_config_dir: /Library/Application Support/MyApp
+site_cache_dir: /Library/Caches/MyApp
+site_runtime_dir: /Users/runner/Library/Caches/TemporaryItems/MyApp
