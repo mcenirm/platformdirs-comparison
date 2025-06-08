@@ -1,0 +1,68 @@
+-- platformdirs 4.3.6 --
+-- app dirs (with optional 'version')
+user_data_dir: /home/runner/.local/share/MyApp/1.0
+user_config_dir: /home/runner/.config/MyApp/1.0
+user_cache_dir: /home/runner/.cache/MyApp/1.0
+user_state_dir: /home/runner/.local/state/MyApp/1.0
+user_log_dir: /home/runner/.local/state/MyApp/1.0/log
+user_documents_dir: /home/runner/Documents
+user_downloads_dir: /home/runner/Downloads
+user_pictures_dir: /home/runner/Pictures
+user_videos_dir: /home/runner/Videos
+user_music_dir: /home/runner/Music
+user_runtime_dir: /run/user/1001/MyApp/1.0
+site_data_dir: /usr/local/share/MyApp/1.0
+site_config_dir: /etc/xdg/MyApp/1.0
+site_cache_dir: /var/cache/MyApp/1.0
+site_runtime_dir: /run/user/1001/MyApp/1.0
+
+-- app dirs (without optional 'version')
+user_data_dir: /home/runner/.local/share/MyApp
+user_config_dir: /home/runner/.config/MyApp
+user_cache_dir: /home/runner/.cache/MyApp
+user_state_dir: /home/runner/.local/state/MyApp
+user_log_dir: /home/runner/.local/state/MyApp/log
+user_documents_dir: /home/runner/Documents
+user_downloads_dir: /home/runner/Downloads
+user_pictures_dir: /home/runner/Pictures
+user_videos_dir: /home/runner/Videos
+user_music_dir: /home/runner/Music
+user_runtime_dir: /run/user/1001/MyApp
+site_data_dir: /usr/local/share/MyApp
+site_config_dir: /etc/xdg/MyApp
+site_cache_dir: /var/cache/MyApp
+site_runtime_dir: /run/user/1001/MyApp
+
+-- app dirs (without optional 'appauthor')
+user_data_dir: /home/runner/.local/share/MyApp
+user_config_dir: /home/runner/.config/MyApp
+user_cache_dir: /home/runner/.cache/MyApp
+user_state_dir: /home/runner/.local/state/MyApp
+user_log_dir: /home/runner/.local/state/MyApp/log
+user_documents_dir: /home/runner/Documents
+user_downloads_dir: /home/runner/Downloads
+user_pictures_dir: /home/runner/Pictures
+user_videos_dir: /home/runner/Videos
+user_music_dir: /home/runner/Music
+user_runtime_dir: /run/user/1001/MyApp
+site_data_dir: /usr/local/share/MyApp
+site_config_dir: /etc/xdg/MyApp
+site_cache_dir: /var/cache/MyApp
+site_runtime_dir: /run/user/1001/MyApp
+
+-- app dirs (with disabled 'appauthor')
+user_data_dir: /home/runner/.local/share/MyApp
+user_config_dir: /home/runner/.config/MyApp
+user_cache_dir: /home/runner/.cache/MyApp
+user_state_dir: /home/runner/.local/state/MyApp
+user_log_dir: /home/runner/.local/state/MyApp/log
+user_documents_dir: /home/runner/Documents
+user_downloads_dir: /home/runner/Downloads
+user_pictures_dir: /home/runner/Pictures
+user_videos_dir: /home/runner/Videos
+user_music_dir: /home/runner/Music
+user_runtime_dir: /run/user/1001/MyApp
+site_data_dir: /usr/local/share/MyApp
+site_config_dir: /etc/xdg/MyApp
+site_cache_dir: /var/cache/MyApp
+site_runtime_dir: /run/user/1001/MyApp
