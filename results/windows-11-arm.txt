@@ -1,4 +1,4 @@
--- platformdirs 4.3.6 --
+-- platformdirs 4.3.8 --
 -- app dirs (with optional 'version')
 user_data_dir: C:\Users\runneradmin\AppData\Local\MyCompany\MyApp\1.0
 user_config_dir: C:\Users\runneradmin\AppData\Local\MyCompany\MyApp\1.0
